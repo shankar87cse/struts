@@ -17,13 +17,16 @@
 */
 package org.superbiz.struts;
 
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "USER")
+@Component
 public class User implements Serializable {
 
     private long id;
